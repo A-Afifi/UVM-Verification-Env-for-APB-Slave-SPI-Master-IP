@@ -1,0 +1,255 @@
+Reading pref.tcl
+
+# 2021.1
+
+# vsim -coverage -c work.spi_master_top -do "coverage save -onexit build/cov_full_req_test_4.ucdb; run -all; quit -f" "+TESTNAME=full_req_test" "+UVM_TESTNAME=full_req_test" "+SEED=4" 
+# Start time: 01:15:03 on May 22,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim-64
+# //  Version 2021.1 win64 Jan 19 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.spi_if(fast)
+# Loading work.apb_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.spi_master_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.spi_master_top(fast)
+# Loading work.spi_if(fast__2)
+# Loading work.apb_if(fast__2)
+# Loading work.spi_master(fast)
+# Loading work.apb_regfile(fast)
+# Loading work.apb_regfile_sva(fast)
+# Loading work.spi_core(fast)
+# Loading work.spi_core_sva(fast)
+# Loading C:/questasim64_2021.1/uvm-1.1d\win64\uvm_dpi.dll
+# coverage save -onexit build/cov_full_req_test_4.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test full_req_test...
+# UVM_INFO ./env/scoreboard/scoreboard.sv(63) @ 0: uvm_test_top.env.sb [build_phase] Building scoreboard and creating analysis exports/FIFOs
+# UVM_INFO ./env/scoreboard/scoreboard.sv(78) @ 0: uvm_test_top.env.sb [build_phase] Finished building scoreboard
+# UVM_INFO ./env/spi_coverage.sv(188) @ 0: uvm_test_top.env.cov [connect_phase] Connecting coverage analysis ports to FIFOs
+# UVM_INFO ./env/scoreboard/scoreboard.sv(87) @ 0: uvm_test_top.env.sb [connect_phase] Connecting scoreboard analysis exports to FIFOs
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ------------------------------------------------------------------
+# Name                       Type                        Size  Value
+# ------------------------------------------------------------------
+# uvm_test_top               full_req_test               -     @478 
+#   env                      spi_env                     -     @485 
+#     apb_agt                apb_agent                   -     @546 
+#       apb_agt_ap           uvm_analysis_port           -     @708 
+#       apb_driver           apb_driver                  -     @576 
+#         rsp_port           uvm_analysis_port           -     @591 
+#         seq_item_port      uvm_seq_item_pull_port      -     @583 
+#       apb_monitor          apb_monitor                 -     @568 
+#         apb_mon_ap         uvm_analysis_port           -     @716 
+#       apb_sqr              apb_sequencer               -     @599 
+#         rsp_export         uvm_analysis_export         -     @606 
+#         seq_item_export    uvm_seq_item_pull_imp       -     @700 
+#         arbitration_queue  array                       0     -    
+#         lock_queue         array                       0     -    
+#         num_last_reqs      integral                    32    'd1  
+#         num_last_rsps      integral                    32    'd1  
+#     cov                    spi_coverage                -     @560 
+#       apb_cov_export       uvm_analysis_export         -     @729 
+#       fifo_apb             uvm_tlm_analysis_fifo #(T)  -     @737 
+#         analysis_export    uvm_analysis_imp            -     @776 
+#         get_ap             uvm_analysis_port           -     @768 
+#         get_peek_export    uvm_get_peek_imp            -     @752 
+#         put_ap             uvm_analysis_port           -     @760 
+#         put_export         uvm_put_imp                 -     @744 
+#       fifo_spi             uvm_tlm_analysis_fifo #(T)  -     @792 
+#         analysis_export    uvm_analysis_imp            -     @831 
+#         get_ap             uvm_analysis_port           -     @823 
+#         get_peek_export    uvm_get_peek_imp            -     @807 
+#         put_ap             uvm_analysis_port           -     @815 
+#         put_export         uvm_put_imp                 -     @799 
+#       spi_cov_export       uvm_analysis_export         -     @784 
+#     sb                     spi_scoreboard              -     @553 
+#       apb_sb_export        uvm_analysis_export         -     @839 
+#       fifo_apb             uvm_tlm_analysis_fifo #(T)  -     @847 
+#         analysis_export    uvm_analysis_imp            -     @886 
+#         get_ap             uvm_analysis_port           -     @878 
+#         get_peek_export    uvm_get_peek_imp            -     @862 
+#         put_ap             uvm_analysis_port           -     @870 
+#         put_export         uvm_put_imp                 -     @854 
+#       fifo_spi             uvm_tlm_analysis_fifo #(T)  -     @902 
+#         analysis_export    uvm_analysis_imp            -     @941 
+#         get_ap             uvm_analysis_port           -     @933 
+#         get_peek_export    uvm_get_peek_imp            -     @917 
+#         put_ap             uvm_analysis_port           -     @925 
+#         put_export         uvm_put_imp                 -     @909 
+#       spi_sb_export        uvm_analysis_export         -     @894 
+#     spi_agt                spi_agent                   -     @539 
+#       spi_agt_ap           uvm_analysis_port           -     @1090
+#       spi_driver           spi_driver                  -     @958 
+#         rsp_port           uvm_analysis_port           -     @973 
+#         seq_item_port      uvm_seq_item_pull_port      -     @965 
+#       spi_monitor          spi_monitor                 -     @950 
+#         spi_mon_ap         uvm_analysis_port           -     @1098
+#       spi_sequencer        spi_sequencer               -     @981 
+#         rsp_export         uvm_analysis_export         -     @988 
+#         seq_item_export    uvm_seq_item_pull_imp       -     @1082
+#         arbitration_queue  array                       0     -    
+#         lock_queue         array                       0     -    
+#         num_last_reqs      integral                    32    'd1  
+#         num_last_rsps      integral                    32    'd1  
+# ------------------------------------------------------------------
+# 
+# UVM_INFO tests/full_req_test.sv(43) @ 0: uvm_test_top [FULL_REQ_TEST] ========================================
+# UVM_INFO tests/full_req_test.sv(44) @ 0: uvm_test_top [FULL_REQ_TEST]   Starting Full Requirements Test R1-R25
+# UVM_INFO tests/full_req_test.sv(45) @ 0: uvm_test_top [FULL_REQ_TEST] ========================================
+# UVM_INFO tests/full_req_test.sv(48) @ 0: uvm_test_top [FULL_REQ_TEST] Applying reset...
+# UVM_INFO tests/full_req_test.sv(53) @ 7000: uvm_test_top [FULL_REQ_TEST] --- R1/R2: Register read/write + reset values ---
+# UVM_INFO sequences/r1_r2_reg_seq.sv(21) @ 7000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r1_r2 [R1_R2_SEQ] === R2: Checking reset values ===
+# UVM_INFO sequences/r1_r2_reg_seq.sv(34) @ 63000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r1_r2 [R1_R2_SEQ] === R1: Write-then-readback all R/W registers ===
+# UVM_INFO sequences/r1_r2_reg_seq.sv(98) @ 359000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r1_r2 [R1_R2_SEQ] === R1/R2 sequence complete ===
+# UVM_INFO tests/full_req_test.sv(60) @ 363000: uvm_test_top [FULL_REQ_TEST] --- R3: CTRL.EN=0 behavior ---
+# UVM_INFO sequences/r3_ctrl_en_seq.sv(14) @ 363000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r3 [R3_SEQ] === R3: CTRL.EN=0 behavior ===
+# UVM_INFO sequences/r3_ctrl_en_seq.sv(52) @ 515000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r3 [R3_SEQ] === R3 sequence complete ===
+# UVM_INFO tests/full_req_test.sv(66) @ 519000: uvm_test_top [FULL_REQ_TEST] --- R4-R8,R24,R25: SPI protocol timing ---
+# UVM_INFO sequences/r4_r8_spi_protocol_seq.sv(56) @ 519000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r4_r8 [R4_R8_SEQ] === R4-R8: SPI Protocol Tests ===
+# UVM_INFO sequences/r4_r8_spi_protocol_seq.sv(64) @ 519000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r4_r8 [R4_R8_SEQ] R24: DIV=0 SCLK=PCLK/2
+# UVM_INFO sequences/r4_r8_spi_protocol_seq.sv(68) @ 2199000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r4_r8 [R4_R8_SEQ] R8: DIV=1 SCLK=PCLK/4
+# UVM_INFO sequences/r4_r8_spi_protocol_seq.sv(72) @ 3879000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r4_r8 [R4_R8_SEQ] R8: DIV=3 SCLK=PCLK/8
+# UVM_INFO sequences/r4_r8_spi_protocol_seq.sv(76) @ 5559000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r4_r8 [R4_R8_SEQ] R8: DIV=255 corner
+# UVM_INFO sequences/r4_r8_spi_protocol_seq.sv(84) @ 7239000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r4_r8 [R4_R8_SEQ] R4: Mode 0 (CPOL=0,CPHA=0)
+# UVM_INFO sequences/r4_r8_spi_protocol_seq.sv(88) @ 8919000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r4_r8 [R4_R8_SEQ] R4: Mode 1 (CPOL=0,CPHA=1)
+# UVM_INFO sequences/r4_r8_spi_protocol_seq.sv(92) @ 10599000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r4_r8 [R4_R8_SEQ] R4: Mode 2 (CPOL=1,CPHA=0)
+# UVM_INFO sequences/r4_r8_spi_protocol_seq.sv(96) @ 12279000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r4_r8 [R4_R8_SEQ] R4: Mode 3 (CPOL=1,CPHA=1)
+# UVM_INFO sequences/r4_r8_spi_protocol_seq.sv(105) @ 13959000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r4_r8 [R4_R8_SEQ] R5/R7: 8-bit Mode0 MSB-first
+# UVM_INFO sequences/r4_r8_spi_protocol_seq.sv(109) @ 15639000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r4_r8 [R4_R8_SEQ] R5/R7: 16-bit Mode0 MSB-first
+# UVM_INFO sequences/r4_r8_spi_protocol_seq.sv(113) @ 17319000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r4_r8 [R4_R8_SEQ] R5/R7: 32-bit Mode0 MSB-first
+# UVM_INFO sequences/r4_r8_spi_protocol_seq.sv(121) @ 18999000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r4_r8 [R4_R8_SEQ] R6: 8-bit LSB-first Mode0
+# UVM_INFO sequences/r4_r8_spi_protocol_seq.sv(125) @ 20679000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r4_r8 [R4_R8_SEQ] R6: 16-bit LSB-first Mode1
+# UVM_INFO sequences/r4_r8_spi_protocol_seq.sv(129) @ 22359000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r4_r8 [R4_R8_SEQ] R6: 32-bit LSB-first Mode2
+# UVM_INFO sequences/r4_r8_spi_protocol_seq.sv(133) @ 24039000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r4_r8 [R4_R8_SEQ] R6: 32-bit MSB-first Mode3
+# UVM_INFO sequences/r4_r8_spi_protocol_seq.sv(140) @ 25719000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r4_r8 [R4_R8_SEQ] R25: Mid-transfer CLK_DIV stability
+# UVM_INFO sequences/r4_r8_spi_protocol_seq.sv(152) @ 26583000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r4_r8 [R4_R8_SEQ] === R4-R8 sequence complete ===
+# UVM_INFO tests/full_req_test.sv(72) @ 26587000: uvm_test_top [FULL_REQ_TEST] --- R9-R15: FIFO tests ---
+# UVM_INFO sequences/r9_r15_fifo_seq.sv(20) @ 26587000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r9_r15 [R9_R15_SEQ] === R9-R15: FIFO Tests ===
+# UVM_INFO sequences/r9_r15_fifo_seq.sv(26) @ 26587000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r9_r15 [R9_R15_SEQ] R15: RX read while empty
+# UVM_INFO sequences/r9_r15_fifo_seq.sv(36) @ 26627000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r9_r15 [R9_R15_SEQ] R9/R11: Fill TX FIFO to 8 entries
+# UVM_INFO sequences/r9_r15_fifo_seq.sv(61) @ 26771000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r9_r15 [R9_R15_SEQ] R13: TX overflow write
+# UVM_INFO sequences/r9_r15_fifo_seq.sv(74) @ 26811000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r9_r15 [R9_R15_SEQ] R12/R10: Fill RX FIFO via loopback
+# UVM_INFO sequences/r9_r15_fifo_seq.sv(105) @ 30123000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r9_r15 [R9_R15_SEQ] R14: RX overflow
+# UVM_INFO sequences/r9_r15_fifo_seq.sv(120) @ 30979000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r9_r15 [R9_R15_SEQ] R10: Pop RX FIFO in order
+# UVM_INFO sequences/r9_r15_fifo_seq.sv(139) @ 31083000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r9_r15 [R9_R15_SEQ] === R9-R15 sequence complete ===
+# UVM_INFO tests/full_req_test.sv(78) @ 31087000: uvm_test_top [FULL_REQ_TEST] --- R16-R18: Interrupt tests ---
+# UVM_INFO sequences/r16_r18_irq_seq.sv(16) @ 31087000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r16_r18 [R16_R18_SEQ] === R16-R18: Interrupt Tests ===
+# UVM_INFO sequences/r16_r18_irq_seq.sv(22) @ 31087000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r16_r18 [R16_R18_SEQ] R16A: Masked event sets INT_STAT but no IRQ
+# UVM_INFO sequences/r16_r18_irq_seq.sv(45) @ 31207000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r16_r18 [R16_R18_SEQ] R16B: IRQ fires when unmasked and event occurs
+# UVM_INFO sequences/r16_r18_irq_seq.sv(62) @ 32079000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r16_r18 [R16_R18_SEQ] R17: W1C clear behavior
+# UVM_INFO sequences/r16_r18_irq_seq.sv(74) @ 32135000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r16_r18 [R16_R18_SEQ] R16: Test all 5 interrupt sources
+# UVM_INFO sequences/r16_r18_irq_seq.sv(127) @ 37167000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r16_r18 [R16_R18_SEQ] R18: W1C race condition test
+# UVM_INFO sequences/r16_r18_irq_seq.sv(146) @ 37295000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r16_r18 [R16_R18_SEQ] === R16-R18 sequence complete ===
+# UVM_INFO tests/full_req_test.sv(84) @ 37299000: uvm_test_top [FULL_REQ_TEST] --- R19-R23: Loopback/SS_n/Delay/APB misc ---
+# UVM_INFO sequences/r19_r23_misc_seq.sv(18) @ 37299000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r19_r23 [R19_R23_SEQ] === R19-R23: Misc Tests ===
+# UVM_INFO sequences/r19_r23_misc_seq.sv(24) @ 37299000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r19_r23 [R19_R23_SEQ] R19: Loopback 8-bit
+# UVM_INFO sequences/r19_r23_misc_seq.sv(35) @ 38163000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r19_r23 [R19_R23_SEQ] R19: Loopback 16-bit
+# UVM_INFO sequences/r19_r23_misc_seq.sv(45) @ 39419000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r19_r23 [R19_R23_SEQ] R19: Loopback 32-bit
+# UVM_INFO sequences/r19_r23_misc_seq.sv(59) @ 41075000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r19_r23 [R19_R23_SEQ] R20: SS_n combinational control
+# UVM_INFO sequences/r19_r23_misc_seq.sv(91) @ 41179000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r19_r23 [R19_R23_SEQ] R21: Inter-transfer delay=0
+# UVM_INFO sequences/r19_r23_misc_seq.sv(105) @ 42883000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r19_r23 [R19_R23_SEQ] R21: Inter-transfer delay=1
+# UVM_INFO sequences/r19_r23_misc_seq.sv(118) @ 45379000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r19_r23 [R19_R23_SEQ] R21: Inter-transfer delay=128 (large)
+# UVM_INFO sequences/r19_r23_misc_seq.sv(136) @ 50267000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r19_r23 [R19_R23_SEQ] R22: PREADY=1, PSLVERR=0 for all accesses
+# UVM_INFO sequences/r19_r23_misc_seq.sv(152) @ 50355000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r19_r23 [R19_R23_SEQ] R23: Reserved offsets
+# UVM_INFO sequences/r19_r23_misc_seq.sv(168) @ 50451000: uvm_test_top.env.apb_agt.apb_sqr@@seq_r19_r23 [R19_R23_SEQ] === R19-R23 sequence complete ===
+# UVM_INFO tests/full_req_test.sv(88) @ 50455000: uvm_test_top [FULL_REQ_TEST] --- Coverage closure ---
+# UVM_INFO sequences/coverage_closure_seq.sv(57) @ 50455000: uvm_test_top.env.apb_agt.apb_sqr@@seq_cov_closure [COV_CLOSURE] === Coverage closure sequence ===
+# UVM_INFO sequences/coverage_closure_seq.sv(68) @ 50455000: uvm_test_top.env.apb_agt.apb_sqr@@seq_cov_closure [COV_CLOSURE] FIX 1/2: CLK_DIV=2 and CLK_DIV=1024
+# UVM_INFO sequences/coverage_closure_seq.sv(111) @ 55423000: uvm_test_top.env.apb_agt.apb_sqr@@seq_cov_closure [COV_CLOSURE] FIX 3: missing mode√?width√?lsb_first cross bins
+# UVM_INFO sequences/coverage_closure_seq.sv(116) @ 55423000: uvm_test_top.env.apb_agt.apb_sqr@@seq_cov_closure [COV_CLOSURE] mode2_w16_msb
+# UVM_INFO sequences/coverage_closure_seq.sv(120) @ 57887000: uvm_test_top.env.apb_agt.apb_sqr@@seq_cov_closure [COV_CLOSURE] mode2_w32_msb
+# UVM_INFO sequences/coverage_closure_seq.sv(124) @ 60351000: uvm_test_top.env.apb_agt.apb_sqr@@seq_cov_closure [COV_CLOSURE] mode3_w16_msb
+# UVM_INFO sequences/coverage_closure_seq.sv(130) @ 62815000: uvm_test_top.env.apb_agt.apb_sqr@@seq_cov_closure [COV_CLOSURE] mode1_w16_lsb
+# UVM_INFO sequences/coverage_closure_seq.sv(134) @ 65279000: uvm_test_top.env.apb_agt.apb_sqr@@seq_cov_closure [COV_CLOSURE] mode1_w32_lsb
+# UVM_INFO sequences/coverage_closure_seq.sv(138) @ 67743000: uvm_test_top.env.apb_agt.apb_sqr@@seq_cov_closure [COV_CLOSURE] mode2_w8_lsb
+# UVM_INFO sequences/coverage_closure_seq.sv(142) @ 70207000: uvm_test_top.env.apb_agt.apb_sqr@@seq_cov_closure [COV_CLOSURE] mode2_w32_lsb
+# UVM_INFO sequences/coverage_closure_seq.sv(146) @ 72671000: uvm_test_top.env.apb_agt.apb_sqr@@seq_cov_closure [COV_CLOSURE] mode3_w8_lsb
+# UVM_INFO sequences/coverage_closure_seq.sv(150) @ 75135000: uvm_test_top.env.apb_agt.apb_sqr@@seq_cov_closure [COV_CLOSURE] mode3_w16_lsb
+# UVM_INFO sequences/coverage_closure_seq.sv(154) @ 77599000: uvm_test_top.env.apb_agt.apb_sqr@@seq_cov_closure [COV_CLOSURE] mode4_w8_lsb
+# UVM_INFO sequences/coverage_closure_seq.sv(158) @ 80063000: uvm_test_top.env.apb_agt.apb_sqr@@seq_cov_closure [COV_CLOSURE] mode4_w16_lsb
+# UVM_INFO sequences/coverage_closure_seq.sv(162) @ 82527000: uvm_test_top.env.apb_agt.apb_sqr@@seq_cov_closure [COV_CLOSURE] mode4_w32_lsb
+# UVM_INFO sequences/coverage_closure_seq.sv(183) @ 84991000: uvm_test_top.env.apb_agt.apb_sqr@@seq_cov_closure [COV_CLOSURE] FIX 4: tx_data_reset ‚?? read TX_DATA after reset
+# UVM_INFO sequences/coverage_closure_seq.sv(213) @ 85079000: uvm_test_top.env.apb_agt.apb_sqr@@seq_cov_closure [COV_CLOSURE] === Coverage closure sequence complete ===
+# UVM_INFO tests/full_req_test.sv(91) @ 85079000: uvm_test_top [FULL_REQ_TEST] ========================================
+# UVM_INFO tests/full_req_test.sv(92) @ 85079000: uvm_test_top [FULL_REQ_TEST]   Full Requirements Test COMPLETE
+# UVM_INFO tests/full_req_test.sv(93) @ 85079000: uvm_test_top [FULL_REQ_TEST] ========================================
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 85079000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ./env/scoreboard/scoreboard.sv(188) @ 85079000: uvm_test_top.env.sb [TEST_SUMMARY] 
+# ===============================================
+#      TEST SUMMARY REPORT - sb
+# ===============================================
+# Test Status       : PASSED
+# Total Transactions: 63802
+# Correct Count     : 63802
+# Error Count       : 0
+# Pass Rate         : 100.00%
+# ===============================================
+# 
+# [TEST_PASSED] full_req_test
+# UVM_INFO ./env/scoreboard/scoreboard.sv(199) @ 85079000: uvm_test_top.env.sb [TEST_RESULT] *** TEST PASSED ***
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   91
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [COV_CLOSURE]    17
+# [FULL_REQ_TEST]    14
+# [Questa UVM]     2
+# [R16_R18_SEQ]     7
+# [R19_R23_SEQ]    11
+# [R1_R2_SEQ]     3
+# [R3_SEQ]     2
+# [R4_R8_SEQ]    18
+# [R9_R15_SEQ]     8
+# [RNTST]     1
+# [TEST_DONE]     1
+# [TEST_RESULT]     1
+# [TEST_SUMMARY]     1
+# [UVMTOP]     1
+# [build_phase]     2
+# [connect_phase]     2
+# ** Note: $finish    : C:/questasim64_2021.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 85079 ns  Iteration: 62  Instance: /spi_master_top
+# Saving coverage database on exit...
+# End time: 01:15:18 on May 22,2026, Elapsed time: 0:00:15
+# Errors: 0, Warnings: 0

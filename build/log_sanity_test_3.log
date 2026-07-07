@@ -1,0 +1,167 @@
+Reading pref.tcl
+
+# 2021.1
+
+# vsim -coverage -c work.spi_master_top -do "coverage save -onexit build/cov_sanity_test_3.ucdb; run -all; quit -f" "+TESTNAME=sanity_test" "+UVM_TESTNAME=sanity_test" "+SEED=3" 
+# Start time: 01:12:10 on May 22,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim-64
+# //  Version 2021.1 win64 Jan 19 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.spi_if(fast)
+# Loading work.apb_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.spi_master_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.spi_master_top(fast)
+# Loading work.spi_if(fast__2)
+# Loading work.apb_if(fast__2)
+# Loading work.spi_master(fast)
+# Loading work.apb_regfile(fast)
+# Loading work.apb_regfile_sva(fast)
+# Loading work.spi_core(fast)
+# Loading work.spi_core_sva(fast)
+# Loading C:/questasim64_2021.1/uvm-1.1d\win64\uvm_dpi.dll
+# coverage save -onexit build/cov_sanity_test_3.ucdb
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test sanity_test...
+# UVM_INFO ./env/scoreboard/scoreboard.sv(63) @ 0: uvm_test_top.env.sb [build_phase] Building scoreboard and creating analysis exports/FIFOs
+# UVM_INFO ./env/scoreboard/scoreboard.sv(78) @ 0: uvm_test_top.env.sb [build_phase] Finished building scoreboard
+# UVM_INFO ./env/spi_coverage.sv(188) @ 0: uvm_test_top.env.cov [connect_phase] Connecting coverage analysis ports to FIFOs
+# UVM_INFO ./env/scoreboard/scoreboard.sv(87) @ 0: uvm_test_top.env.sb [connect_phase] Connecting scoreboard analysis exports to FIFOs
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ------------------------------------------------------------------
+# Name                       Type                        Size  Value
+# ------------------------------------------------------------------
+# uvm_test_top               sanity_test                 -     @478 
+#   env                      spi_env                     -     @485 
+#     apb_agt                apb_agent                   -     @526 
+#       apb_agt_ap           uvm_analysis_port           -     @688 
+#       apb_driver           apb_driver                  -     @556 
+#         rsp_port           uvm_analysis_port           -     @571 
+#         seq_item_port      uvm_seq_item_pull_port      -     @563 
+#       apb_monitor          apb_monitor                 -     @548 
+#         apb_mon_ap         uvm_analysis_port           -     @696 
+#       apb_sqr              apb_sequencer               -     @579 
+#         rsp_export         uvm_analysis_export         -     @586 
+#         seq_item_export    uvm_seq_item_pull_imp       -     @680 
+#         arbitration_queue  array                       0     -    
+#         lock_queue         array                       0     -    
+#         num_last_reqs      integral                    32    'd1  
+#         num_last_rsps      integral                    32    'd1  
+#     cov                    spi_coverage                -     @540 
+#       apb_cov_export       uvm_analysis_export         -     @709 
+#       fifo_apb             uvm_tlm_analysis_fifo #(T)  -     @717 
+#         analysis_export    uvm_analysis_imp            -     @756 
+#         get_ap             uvm_analysis_port           -     @748 
+#         get_peek_export    uvm_get_peek_imp            -     @732 
+#         put_ap             uvm_analysis_port           -     @740 
+#         put_export         uvm_put_imp                 -     @724 
+#       fifo_spi             uvm_tlm_analysis_fifo #(T)  -     @772 
+#         analysis_export    uvm_analysis_imp            -     @811 
+#         get_ap             uvm_analysis_port           -     @803 
+#         get_peek_export    uvm_get_peek_imp            -     @787 
+#         put_ap             uvm_analysis_port           -     @795 
+#         put_export         uvm_put_imp                 -     @779 
+#       spi_cov_export       uvm_analysis_export         -     @764 
+#     sb                     spi_scoreboard              -     @533 
+#       apb_sb_export        uvm_analysis_export         -     @819 
+#       fifo_apb             uvm_tlm_analysis_fifo #(T)  -     @827 
+#         analysis_export    uvm_analysis_imp            -     @866 
+#         get_ap             uvm_analysis_port           -     @858 
+#         get_peek_export    uvm_get_peek_imp            -     @842 
+#         put_ap             uvm_analysis_port           -     @850 
+#         put_export         uvm_put_imp                 -     @834 
+#       fifo_spi             uvm_tlm_analysis_fifo #(T)  -     @882 
+#         analysis_export    uvm_analysis_imp            -     @921 
+#         get_ap             uvm_analysis_port           -     @913 
+#         get_peek_export    uvm_get_peek_imp            -     @897 
+#         put_ap             uvm_analysis_port           -     @905 
+#         put_export         uvm_put_imp                 -     @889 
+#       spi_sb_export        uvm_analysis_export         -     @874 
+#     spi_agt                spi_agent                   -     @519 
+#       spi_agt_ap           uvm_analysis_port           -     @1070
+#       spi_driver           spi_driver                  -     @938 
+#         rsp_port           uvm_analysis_port           -     @953 
+#         seq_item_port      uvm_seq_item_pull_port      -     @945 
+#       spi_monitor          spi_monitor                 -     @930 
+#         spi_mon_ap         uvm_analysis_port           -     @1078
+#       spi_sequencer        spi_sequencer               -     @961 
+#         rsp_export         uvm_analysis_export         -     @968 
+#         seq_item_export    uvm_seq_item_pull_imp       -     @1062
+#         arbitration_queue  array                       0     -    
+#         lock_queue         array                       0     -    
+#         num_last_reqs      integral                    32    'd1  
+#         num_last_rsps      integral                    32    'd1  
+# ------------------------------------------------------------------
+# 
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 187000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ./env/scoreboard/scoreboard.sv(188) @ 187000: uvm_test_top.env.sb [TEST_SUMMARY] 
+# ===============================================
+#      TEST SUMMARY REPORT - sb
+# ===============================================
+# Test Status       : PASSED
+# Total Transactions: 138
+# Correct Count     : 138
+# Error Count       : 0
+# Pass Rate         : 100.00%
+# ===============================================
+# 
+# [TEST_PASSED] sanity_test
+# UVM_INFO ./env/scoreboard/scoreboard.sv(199) @ 187000: uvm_test_top.env.sb [TEST_RESULT] *** TEST PASSED ***
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   11
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [TEST_RESULT]     1
+# [TEST_SUMMARY]     1
+# [UVMTOP]     1
+# [build_phase]     2
+# [connect_phase]     2
+# ** Note: $finish    : C:/questasim64_2021.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 187 ns  Iteration: 64  Instance: /spi_master_top
+# Saving coverage database on exit...
+# End time: 01:12:24 on May 22,2026, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 0
